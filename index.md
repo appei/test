@@ -1,37 +1,87 @@
-## Welcome to GitHub Pages
+<style>
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
 
-You can use the [editor on GitHub](https://github.com/appei/test/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+header {
+	width: 100%;
+	padding-bottom: 25px;
+	flex-direction: column;
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+img {
+max-width: 100%;
+max-height: 100vh;
+display:block;
+margin: auto;
+}
 
-### Markdown
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.buttont {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 60px;
+}
+</style>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  
+  
+  
+  
 
-```markdown
-Syntax highlighted code block
+</head>
 
-# Header 1
-## Header 2
-### Header 3
+<body translate="no" >
+  <html>
+	<head>
+		<title>Random Picture Generator</title>
+		<link rel="stylesheet" href="assets/stylesheets/app.css">
+	</head>
+	<body>
+		<header class="flex">
+			<h1>Drawpile Fishing</h1>
+			<button class="buttont">Generate Random Picture</button>
+		</header>
+		<section class="flex">
+			<img src="">
+		</section>
+		<script src="assets/scripts/app.js"></script>
+	</body>
+</html>
+  
+  
+      <script id="rendered-js" >
+const imageArray = [
+	"https://i.lensdump.com/i/rsE2t0.png",
+	"https://64.media.tumblr.com/tumblr_lri7cqp5sD1qd8xmf.gif",
+];
 
-- Bulleted
-- List
+const image = document.querySelector("img");
+const button = document.querySelector("button");
 
-1. Numbered
-2. List
+window.onload = () => generateRandomPicture(imageArray);
 
-**Bold** and _Italic_ and `Code` text
+button.addEventListener("click", () => generateRandomPicture(imageArray));
 
-[Link](url) and ![Image](src)
-```
+function generateRandomPicture(array){
+	let randomNum = Math.floor(Math.random() * array.length); 
+	image.setAttribute("src", array[randomNum]);
+}
+    </script>
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+  
 
-### Jekyll Themes
+</body>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/appei/test/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</html>
