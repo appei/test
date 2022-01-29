@@ -23,12 +23,46 @@ margin: auto;
 	align-items: center;
 }
 .buttont {
-  background-color: #4CAF50; /* Green */
-  border: none;
+  background-color: #351312; /* Green */
+  border-radius: 30px;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 60px;
+    display: inline-block;
+letter-spacing: 1px;
+  font-family: "Courier New", Courier, monospace;
+  font-variant: small-caps;
+  font-weight: 550;
+  font-size: 40px;
+  transition-duration: 0.2s;
+}
+.buttont:hover {
+  background-color: #604341; /* Green */
+  font-weight: 700;
+  color: 000;
+}
+.Fonty {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-family: "Courier New", Courier, monospace;
+font-size: 11px;
+letter-spacing: 2px;
+word-spacing: 2px;
+}
+
+.wrapper { 
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: url(https://i.pinimg.com/originals/32/62/bd/3262bd8fc632b8f4c35c922cd5f66c4f.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 }
