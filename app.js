@@ -1,6 +1,6 @@
 const imageArray = [
-	"https://i.lensdump.com/i/rsE2t0.png",
-	"https://64.media.tumblr.com/tumblr_lri7cqp5sD1qd8xmf.gif",
+	"https://i2.lensdump.com/i/rsoFpb.png",
+	"https://i3.lensdump.com/i/rsoUF7.png",
 ];
 
 const image = document.querySelector("img");
@@ -14,3 +14,6 @@ function generateRandomPicture(array){
 	let randomNum = Math.floor(Math.random() * array.length); 
 	image.setAttribute("src", array[randomNum]);
 }
+
+//if issues cut here
+
