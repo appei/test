@@ -1,6 +1,10 @@
 const imageArray = [
 	"https://i2.lensdump.com/i/rsoFpb.png",
 	"https://i3.lensdump.com/i/rsoUF7.png",
+  "https://i1.lensdump.com/i/rsfywC.png",
+  "https://i2.lensdump.com/i/rsFT0Q.png",
+  "https://i2.lensdump.com/i/rsxzRF.png",
+	"https://i2.lensdump.com/i/rsxj2Q.png"
 ];
 
 const image = document.querySelector("img");
@@ -16,4 +20,3 @@ function generateRandomPicture(array){
 }
 
 //if issues cut here
-
